@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+	<script src="app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/factories.js"></script>
+	<!-- // <script src="js/directives.js"></script> -->
+</head>
+<body ng-app="vssApp">
+	<div ng-controller="MainCtrl">
+		<h2 ng-model="connectionStatus">Connection Status: {{connectionStatus}}</h2>
+		<p ng-model="position">Position: {{position}}</p>
+		<!-- <input type="number" min="220" max="1760" step="220" ng-model="frequency" value="440"/> -->
+		<!-- <input frequency-slider> -->
+	</div>
+</body>
+</html>
