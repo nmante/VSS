@@ -1,11 +1,12 @@
 {
-	"name": "simple-poster",
-	"version": "0.0.1",
-	"private": "true",
-	"scripts":{
-		"start": "node app.js"
-	},
-	"dependencies": {
-		"express": "3.4.8"
-	}
+  "name": "simple-poster",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "socket.io": "~0.9.16"
+  }
 }
