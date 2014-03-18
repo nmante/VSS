@@ -1,5 +1,9 @@
 'use strict';
 
+// TODO - Create custom directives to allow you to adjust parameters like
+// 		- Frequency
+// 		- Attack, Sustain, Delay, Release
+
 app.directive('frequencySlider', [function(){
 	
 	return {

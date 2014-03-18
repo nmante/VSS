@@ -2,6 +2,10 @@
 
 app.controller('MainCtrl', ['$rootScope', '$scope', 'socket', 'webAudio', function ($rootScope, $scope, socket, webAudio){
 
+		// The web address we'll run the server at
+		$rootScope.host = "localhost";
+		$rootScope.port = 3000;
+
 		// The position of the sound we should play.
 		// It's fetched via socket.io from our client
 		$rootScope.position = {};
