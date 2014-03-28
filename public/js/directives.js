@@ -25,3 +25,12 @@ app.directive('frequencySlider', [function(){
 		}
 	};
 }]);
+
+// TODO - Create a directive which let's the user pick the sound to play
+//      - Sounds could be sinusoid or songs, or mp3
+
+app.directive('source', [function(){
+	return {
+
+	};
+}]);

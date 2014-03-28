@@ -233,6 +233,7 @@ app.service('webAudio', ['$window', '$http', function($window, $http){
 		}else{
 			// Create the mp3 sound, and load it into a node
 			bufferSource = this.context.createBufferSource();
+			console.log(this.soundBuffer);
 			bufferSource.buffer = this.soundBuffer;	
 			bufferSource.connect(panner.panner);	
 			panner.connect(this.context.destination);

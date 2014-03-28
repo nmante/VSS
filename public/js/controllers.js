@@ -14,7 +14,7 @@ app.controller('MainCtrl', ['$rootScope', '$scope', 'socket', 'webAudio', functi
 		$rootScope.frequency = 0;
 
 		// Tell our web audio service to load a file
-		//webAudio.loadSoundBuffer('res/sounds/audiocheck.net_E3.mp3', webAudio);
+		webAudio.loadSoundBuffer('res/sounds/audiocheck.net_E3.mp3', webAudio);
 
 		socket.on('connect', function () {
 			$rootScope.connectionStatus = "Connected";
