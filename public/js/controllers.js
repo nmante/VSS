@@ -11,10 +11,10 @@ app.controller('MainCtrl', ['$rootScope', '$scope', 'socket', 'webAudio', functi
 		$rootScope.position = {};
 
 		// The frequency we should play the sinusoid tone at
-		$rootScope.frequency = 0;
+		$rootScope.frequency = 440;
 
 		// Tell our web audio service to load a file
-		webAudio.loadSoundBuffer('res/sounds/audiocheck.net_E3.mp3', webAudio);
+		// webAudio.loadSoundBuffer('res/sounds/audiocheck.net_E3.mp3', webAudio);
 
 		socket.on('connect', function () {
 			$rootScope.connectionStatus = "Connected";
@@ -22,6 +22,7 @@ app.controller('MainCtrl', ['$rootScope', '$scope', 'socket', 'webAudio', functi
 
 		// Listen for the 'position' event from any clients
 		// Tell the our custom web audio service to start playing
+		
 		socket.on('position', function (data) {
 			$rootScope.position = data;
 			webAudio.position = $rootScope.position;

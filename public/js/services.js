@@ -221,6 +221,7 @@ app.service('webAudio', ['$window', '$http', function($window, $http){
 		// Check to see if we're playing sinusoidal tones or buffers
 		if(!this.shouldUseSoundBuffer){
 			// Generate a sinusoidal tone
+			console.log("Using sinusoid");
 			oscillator = new Oscillator();
 			oscillator.connect(panner.panner);
 			panner.connect(gain.gain);
@@ -231,6 +232,7 @@ app.service('webAudio', ['$window', '$http', function($window, $http){
 			oscillator.oscillator.stop(this.playTime + .4);
 
 		}else{
+			console.log("Using buffer");
 			// Create the mp3 sound, and load it into a node
 			bufferSource = this.context.createBufferSource();
 			console.log(this.soundBuffer);

@@ -21,5 +21,5 @@
 var app = angular.module("vssApp",[]);
 
 // Set to true for console print statements, false to turn off 
-var DEBUG = true;
+var DEBUG = false;
 
